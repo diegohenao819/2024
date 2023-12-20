@@ -1,0 +1,111 @@
+.hero {
+
+  min-height: 85vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.hero_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+  
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--text-color);
+    
+  
+ 
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+
+    background: linear-gradient(to right, var(--accent-color),red, var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block; /* This ensures the gradient only covers the text */
+  }
+
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .button1{
+        background-color: var(--accent-color);
+        color: var(--text-color);
+        font-weight: 400;
+    }
+
+    button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: 2px solid var(--accent-color);
+      border-radius: 5px;
+      background-color: transparent;
+      color: var(--accent-color);
+      font-size: 1rem;
+      font-weight: 300;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+
+
+
+
+/* HERO RIGHT */
+
+.hero_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.hero_right img {
+  width: 400px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 10px solid var(--accent-color);
+}
