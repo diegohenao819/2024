@@ -3,7 +3,7 @@ import avatar from "../../assets/img/avatar.png";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="hero_left">
         <h1>
           I am <span>Diego</span> Henao
@@ -14,13 +14,12 @@ const Hero = () => {
           language education. Fluent in Spanish and English, skilled in
           React.js, MongoDB, Node.js.
           <br />
-          <br />
-          I am driven by a love for web development and continuous
+          <br />I am driven by a love for web development and continuous
           learning.
         </p>
 
         <div className="buttons">
-          <button className="button1">Download CV</button>
+          <a href="cv.pdf" download> Download CV</a>
           <button>Contact me</button>
         </div>
       </div>

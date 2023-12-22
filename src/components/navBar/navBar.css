@@ -1,3 +1,7 @@
+.burger {
+  display: none;
+}
+
 .NavBar {
   display: flex;
   justify-content: space-between;
@@ -43,6 +47,22 @@ ul {
 
 li {
   text-decoration: none;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.link-home{
+  
+  border: 2px solid var(--accent-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a:hover{
+
+border-bottom: 5px solid var(--accent-color);
+color: aqua;
 }
 
 a {
@@ -53,4 +73,71 @@ a {
   letter-spacing: 2px;
   margin: 0 10px;
   transition: all 0.3s ease-in-out;
+}
+
+/* ****************************************************** */
+/* ****************************************************** */
+/* ****************************************************** */
+/* ****************************************************** */
+
+@media (width < 800px) {
+  .NavBar {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    position: relative;
+    
+
+    svg{
+      width: 30px;
+      height: 30px;
+
+   
+    }
+
+    .empanada {
+
+      color: black;
+    }
+
+    .open {
+      position: absolute;
+      z-index: 3;
+      width: 200px;
+      height: 300px;
+      background-color: var(--background-color);
+     
+      border: var(--accent-color) solid 2px;
+    }
+
+    ul {
+      display: flex;
+      
+      flex-direction: column;
+      background-color: var(--background-color);
+    }
+    li {
+      background-color: white;
+      color: rgb(35, 6, 35);
+      border: var(--accent-color) solid 2px;
+      margin-top: 15px;
+      font-weight: 400;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    li:hover{
+      background-color: var(--accent-color);
+      color: var(--background-color);
+      font-weight: 600;
+    }
+
+    .close {
+      display: none;
+    }
+  }
 }

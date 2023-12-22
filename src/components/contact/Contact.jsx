@@ -2,7 +2,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="fondo">
+    <div className="fondo" id="contact">
      <div className="titulos-contact">
        <h1>Contact</h1>
        <div className="divider-contact"></div>

@@ -26,7 +26,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects">
+    <div className="projects" id="project">
       <div className="titulo">
         <h1>My Projects</h1>
         <div className="divider"></div>
