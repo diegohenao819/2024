@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;800&display=swap");
 
 :root {
-  --primary-color: #5b8c85;     /*Brand color: Dominant color */
-  --secondary-color: #a7beae;   /*subheadings, active states, or hover states */
-  --background-color: #191c32;  /*Brand color */
-  --text-color: white;        /*Brand color */
-  --accent-color: #f2b632;      /*Brand color */
-  --error-color: #e63946;       /*Brand color */
-
+  --primary-color: #5b8c85; /*Brand color: Dominant color */
+  --secondary-color: #a7beae; /*subheadings, active states, or hover states */
+  --background-color: #191c32; /*Brand color */
+  --text-color: white; /*Brand color */
+  --accent-color: #f2b632; /*Brand color */
+  --error-color: #e63946; /*Brand color */
 }
 
 * {
@@ -18,13 +17,10 @@
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   background-color: var(--background-color);
- 
-  
 }
 
 section {
-
- 
   scroll-snap-align: center;
-}
 
+  
+}

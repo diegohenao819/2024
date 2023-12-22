@@ -4,7 +4,7 @@ import Card from "./Card";
 const Projects = () => {
   const projects = [
     {
-      img: "https://master.d1ie4jvzhxyf59.amplifyapp.com/static/media/Image-3.2e00a2ce.png",
+      img: "https://th.bing.com/th/id/OIP.9I9YPxcjyKF9ZgfupSz_egHaHa?rs=1&pid=ImgDetMain",
       title: "Click-Prof",
       description:
         "English language exam including a series of questions and a score based on the CEFR.",
@@ -13,8 +13,7 @@ const Projects = () => {
     {
       img: "https://brightstardaycare.org/wp-content/gf-uploads/2021/08/preview-m/3144-ORIGINAL-0.jpg?t=1628080154",
       title: "Instituto Emmi Pikler",
-      description:
-        "Website for a daycare center in Pereira, Colombia.",
+      description: "Website for a daycare center in Pereira, Colombia.",
       link: "https://emmi-pikler.netlify.app/",
     },
     {

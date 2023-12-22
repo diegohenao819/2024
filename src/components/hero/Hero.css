@@ -1,9 +1,8 @@
 .hero {
-
   min-height: 85vh;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   gap: 20px;
 }
@@ -13,8 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: 40%;
-  
+  flex-basis: 50%;
 
   h1 {
     font-size: 3rem;
@@ -29,13 +27,11 @@
     color: var(--accent-color);
     margin-bottom: 20px;
   }
-  p{
+  p {
     font-size: 0.8rem;
     font-weight: 300;
     color: var(--text-color);
-    
-  
- 
+    padding: 30px;
   }
 
   h2 {
@@ -45,23 +41,28 @@
     margin-bottom: 20px;
     letter-spacing: 5px;
 
-    background: linear-gradient(to right, var(--accent-color),red, var(--accent-color));
+    background: linear-gradient(
+      to right,
+      var(--accent-color),
+      red,
+      var(--accent-color)
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     display: inline-block; /* This ensures the gradient only covers the text */
   }
 
-  .buttons{
+  .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 
-    .button1{
-        background-color: var(--accent-color);
-        color: var(--text-color);
-        font-weight: 400;
+    .button1 {
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      font-weight: 400;
     }
 
     button {
@@ -88,10 +89,6 @@
   }
 }
 
-
-
-
-
 /* HERO RIGHT */
 
 .hero_right {
@@ -108,4 +105,69 @@
   margin-right: 10px;
   border-radius: 50%;
   border: 10px solid var(--accent-color);
+}
+
+/* ***************************************** */
+/* ***************************************** */
+/* ***************************************** */
+/* ***************************************** */
+
+@media (width < 800px) {
+  .hero {
+    flex-direction: column;
+    min-height: 100vh;
+    
+   
+    
+   
+  }
+
+  .hero_left {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    h2{
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0px;
+    }
+    span{
+      font-size: 2rem;
+      margin-bottom: 0px;
+    }
+
+    p {
+      width: 80%;
+      word-wrap: break-word;
+      word-break: break-all;
+      
+      margin: 0px;
+      padding-bottom: 0px;
+    }
+
+    .buttons {
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 0px;
+
+      button {
+        margin: 10px 0px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .hero_right {
+    flex-basis: 100%;
+  }
+
+  .hero_right img {
+    width: 300px;
+    height: auto;
+  }
 }

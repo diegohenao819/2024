@@ -5,12 +5,12 @@ import "./Card.css"; // Assuming you have a CSS file for styling the card
 const Card = ({ project }) => {
   return (
     <div className="card">
-      <div>
+      <div className="card-picture">
         <img src={project.img} alt="" />
       </div>
       <h2>{project.title}</h2>
       <p>{project.description}</p>
-      <a href={project.link} rel="noreferrer"  target="_blank">
+      <a href={project.link} rel="noreferrer" target="_blank">
         <button className="view_project">
           <svg
             xmlns="http://www.w3.org/2000/svg"
