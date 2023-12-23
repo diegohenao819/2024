@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/2024/",
   build: {
     rollupOptions: {
-      input: './index.html' // Ensure this is the path to your entry HTML file
+      input: './App.jsx' // Ensure this is the path to your entry HTML file
     }
   }
 });
