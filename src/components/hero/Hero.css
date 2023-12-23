@@ -85,6 +85,12 @@
       &:active {
         transform: scale(0.95);
       }
+
+      a:hover{
+        text-decoration: none;
+        color: var(--accent-color);
+        border: none;
+      }
     }
   }
 }

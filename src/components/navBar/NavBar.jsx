@@ -2,23 +2,8 @@ import "./navBar.css";
 import logo from "../../assets/img/logo.png";
 import { useState } from "react";
 
-
-
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-
-
-
-  const handleNavigation = (e, sectionId) => {
-    e.preventDefault();
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-     
-    }
-  };
-
-
 
   function openToggle() {
     setOpen(!open);
@@ -50,15 +35,13 @@ const NavBar = () => {
             </svg>
           </div>
           <ul>
-            <a href="#home"  onClick={(e) => handleNavigation(e, '#home')}>
-              <li onClick={openToggle}
-             
-              >Home</li>
+            <a href="#home">
+              <li onClick={openToggle}>Home</li>
             </a>
-            <a href="#project" onClick={(e) => handleNavigation(e, '#project')}>
+            <a href="#project">
               <li onClick={openToggle}>Projects</li>
             </a>
-            <a href="#contact" onClick={(e) => handleNavigation(e, '#contact')}>
+            <a href="#contact">
               <li onClick={openToggle}>Contact</li>
             </a>
           </ul>
@@ -66,7 +49,7 @@ const NavBar = () => {
       </div>
 
       {/* **********************************************+ */}
-      <div className="NavBar">
+      <div className="NavBar" id="navbar">
         <div className="logo">
           <img src={logo} alt="logo Diego Henao" />
           <h2>
@@ -75,13 +58,17 @@ const NavBar = () => {
         </div>
 
         <ul className="items">
+          <a href="#navbar" className="link-home">
+            Home
+          </a>
 
-    
-          <a href="#home" className="link-home">Home</a>
+          <a href="#project" className="link-home">
+            Projects
+          </a>
 
-          <a href="#project" className="link-home">Projects</a>
-
-          <a href="#contact" className="link-home">Contact</a>
+          <a href="#contact" className="link-home">
+            Contact
+          </a>
         </ul>
       </div>
     </>

@@ -7,6 +7,9 @@
   justify-content: space-between;
   align-items: center;
   height: 15vh;
+  margin-top: 0px;
+  border-top: 2px solid var(--accent-color);
+  position: sticky;
 
   width: 100%;
 }
@@ -53,18 +56,21 @@ li {
 }
 
 .link-home{
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid var(--accent-color);
   padding: 10px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 95px;
 }
 
-a:hover{
-
-border-bottom: 5px solid var(--accent-color);
-color: aqua;
+.link-home:hover{
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  font-weight: 600;
 }
-
 a {
   text-decoration: none;
   color: #fff;

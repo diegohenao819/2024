@@ -94,7 +94,7 @@ h1 {
       height: 30px;
       margin-right: 15px;
     }
-    p {
+    a {
       margin: 0px;
       background-color: transparent;
       color: var(--text-color);

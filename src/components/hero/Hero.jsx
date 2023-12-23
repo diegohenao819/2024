@@ -19,8 +19,17 @@ const Hero = () => {
         </p>
 
         <div className="buttons">
-          <a href="cv.pdf" download> Download CV</a>
-          <button>Contact me</button>
+          <a
+            href="https://drive.google.com/file/d/1wF8kCnt06IRy_AtMFHmrKtLS8QTnEBG9/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="button1">Download CV</button>
+          </a>
+
+          <a href="#contact">
+            <button>Contact me</button>
+          </a>
         </div>
       </div>
 
