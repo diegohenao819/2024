@@ -5,4 +5,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/2024/",
+
+  build: {
+    rollupOptions: {
+      input: "./index.html", // Ensure this is the path to your entry HTML file
+    },
+  },
 });
